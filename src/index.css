@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+body {
+  @apply font-montserrat text-m text-primaryColorSuperDark;
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1520px] mx-auto px-[10px];
+  }
+}
+
+@layer components {
+  .inner {
+    @apply flex justify-between items-center;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply max-w-[200px] p-[10px] w-full flex items-center justify-center bg-primaryColor text-primaryColorInv rounded-standartRadius hover:bg-primaryColorHover;
+  }
+}
