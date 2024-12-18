@@ -30,6 +30,12 @@ export default {
       },
       minHeight: {
         minusHeader: "calc(100vh - 116px)"
+      },
+      animation: {
+        bounceOne: "pulse 2.5s -.3s linear infinite", 
+        bounceTwo: "pulse 2.5s -.6s linear infinite", 
+        bounceThree: "pulse 2.5s -.9s linear infinite", 
+        bounceFor: "pulse 2.5s -1.2s linear infinite", 
       }
     },
   },

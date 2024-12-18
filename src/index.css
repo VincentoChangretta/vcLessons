@@ -71,4 +71,8 @@
   .gitIconLight::after {
     @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-primaryColorInv
   }
+
+  .mainTitleDark {
+    @apply text-primaryColorInv;
+  }
 }

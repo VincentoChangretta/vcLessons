@@ -18,7 +18,7 @@ export const MainPageTop = () => {
           <div className="mb-[60px]">
             <div className="relative z-10 text-center mb-[30px]">
               <h1 className=" text-6xl font-extrabold text-primaryColor leading-[90px]">
-                <span className="text-primaryColorDark">
+                <span className={`${theme === "dark" ? "mainTitleDark" : "text-primaryColor"}  `}>
                   Твой путь к веб-успеху <br /> начинается с
                 </span>
                 <span className="ml-[20px] px-[35px] py-[7px] bg-primaryColor text-primaryColorInv rounded-[50px]">
@@ -34,16 +34,16 @@ export const MainPageTop = () => {
             </h3>
           </div>
           <div className="flex justify-center gap-[100px] text-[200px]">
-            <div className={`${theme === "dark" ? "htmlIcon" : "text-htmlColor"}`}>
+            <div className={`${theme === "dark" ? "htmlIcon animate-bounceOne" : "text-htmlColor"} `}>
               <FontAwesomeIcon icon={faHtml5} />
             </div>
-            <div className={`${theme === "dark" ? "cssIcon" : "text-cssColor"}`}>
+            <div className={`${theme === "dark" ? "cssIcon animate-bounceTwo" : "text-cssColor"} `}>
               <FontAwesomeIcon icon={faCss3} />
             </div>
-            <div className={`${theme === "dark" ? "jsIcon" : "text-jsColor"}`}>
+            <div className={`${theme === "dark" ? "jsIcon animate-bounceThree" : "text-jsColor"} `}>
               <FontAwesomeIcon icon={faJsSquare} />
             </div>
-            <div className={`${theme === "dark" ? "gitIconLight" : "text-gitColor"}`}>
+            <div className={`${theme === "dark" ? "gitIconLight animate-bounceFor" : "text-gitColor"} `}>
               <FontAwesomeIcon icon={faGithub} />
             </div>
           </div>

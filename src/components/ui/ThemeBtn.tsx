@@ -10,7 +10,7 @@ export const ThemeBtn = () => {
       className={classNames(
         "",
         {
-          "bg-primaryColorDark": theme === "light",
+          "bg-primaryColor": theme === "light",
           "bg-primaryColorInv": theme === "dark",
         },
         ["relative w-[70px] h-[30px] rounded-standartRadius cursor-pointer shrink-0"]
@@ -21,7 +21,7 @@ export const ThemeBtn = () => {
           "",
           {
             "bg-primaryColorInv": theme === "light",
-            "bg-primaryColorDark left-auto right-[3px]": theme === "dark",
+            "bg-primaryColor left-auto right-[3px]": theme === "dark",
             
           },
           [
