@@ -8,3 +8,9 @@ export interface TechItem {
   name: string;
   FaIcon: IconProp;
 }
+
+export interface ProgrammItem {
+  name: string,
+  text?: string,
+  description: string[],
+}

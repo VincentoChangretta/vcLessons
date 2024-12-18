@@ -9,6 +9,7 @@ export default {
       fontSize: {
         m: "18px",
         l: "24px",
+        title: "45px" 
       },
       colors: {
         primaryColor: "#4264EB",

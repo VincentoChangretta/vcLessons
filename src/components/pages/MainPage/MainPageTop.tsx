@@ -1,48 +1,51 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { technologyData } from "../../../../public/appData";
-import { TechItem } from "../../../../public/appDataTypes";
-
-const colorMap: Record<string, string> = {
-  HTML: "text-htmlColor",
-  CSS: "text-cssColor",
-  JavaScript: "text-jsColor",
-  GitHub: "text-gitColor",
-};
-
-const setColor = (color: string): string => {
-  return colorMap[color] || "text-[#1a1a1a]"; 
-};
+import {
+  faCss3,
+  faGithub,
+  faHtml5,
+  faJsSquare,
+} from "@fortawesome/free-brands-svg-icons";
+import { useContext } from "react";
+import { ThemeContext } from "../../theme/ThemeContext";
 
 export const MainPageTop = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <section className="relative">
+    <section className="relative mb-[70px]">
       <div className="container">
-        <div className="pt-[400px]">
-          <div className="relative z-10 max-w-[900px]">
-            <h1 className=" text-6xl font-extrabold text-primaryColor leading-[85px] mb-[40px]">
-              <span className="text-primaryColorDark">
-                Твой путь к веб-успеху начинается с
-              </span>
-              <span className="ml-[20px] px-[35px] py-[7px] bg-primaryColor text-primaryColorInv rounded-[50px]">
-                vcLessons!
-              </span>
-            </h1>
-          </div>
-          <div className="flex gap-[20px] text-xl">
-            {technologyData.map((technology: TechItem, index) => (
-              <div
-                key={index}
-                className="px-[40px] py-[5px] bg-[#eee] shadow-lg rounded-standartRadius border-b-8 border-[#CECECE]"
-              >
-                <span className="mr-[10px]">
-                  <FontAwesomeIcon
-                    icon={technology.FaIcon}
-                    className={`${setColor(technology.name)}`}
-                  />
+        <div className="pt-[120px]">
+          <div className="mb-[60px]">
+            <div className="relative z-10 text-center mb-[30px]">
+              <h1 className=" text-6xl font-extrabold text-primaryColor leading-[90px]">
+                <span className="text-primaryColorDark">
+                  Твой путь к веб-успеху <br /> начинается с
                 </span>
-                {technology.name}
-              </div>
-            ))}
+                <span className="ml-[20px] px-[35px] py-[7px] bg-primaryColor text-primaryColorInv rounded-[50px]">
+                  vcLessons!
+                </span>
+              </h1>
+            </div>
+            <h3 className="max-w-[850px] mx-auto text-center">
+              Мы предлагаем увлекательные и доступные уроки по HTML, CSS,
+              JavaScript и Git, которые помогут тебе освоить основы и создавать
+              первые сайты. <br /> Присоединяйся к нам и открой для себя
+              безграничные возможности веб-технологий!
+            </h3>
+          </div>
+          <div className="flex justify-center gap-[100px] text-[200px]">
+            <div className={`${theme === "dark" ? "htmlIcon" : "text-htmlColor"}`}>
+              <FontAwesomeIcon icon={faHtml5} />
+            </div>
+            <div className={`${theme === "dark" ? "cssIcon" : "text-cssColor"}`}>
+              <FontAwesomeIcon icon={faCss3} />
+            </div>
+            <div className={`${theme === "dark" ? "jsIcon" : "text-jsColor"}`}>
+              <FontAwesomeIcon icon={faJsSquare} />
+            </div>
+            <div className={`${theme === "dark" ? "gitIconLight" : "text-gitColor"}`}>
+              <FontAwesomeIcon icon={faGithub} />
+            </div>
           </div>
         </div>
       </div>

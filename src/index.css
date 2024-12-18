@@ -3,24 +3,72 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
 
-body {
-  @apply font-montserrat text-m text-primaryColorSuperDark;
+.app {
+  @apply font-montserrat text-m text-primaryColorInv bg-primaryColorSuperDark;
+}
+
+.app.light {
+  @apply font-montserrat text-m text-primaryColorSuperDark bg-primaryColorInv;
 }
 
 @layer components {
   .container {
-    @apply max-w-[1520px] mx-auto px-[10px];
+    @apply max-w-[1320px] mx-auto px-[10px];
   }
-}
 
-@layer components {
   .inner {
     @apply flex justify-between items-center;
   }
-}
 
-@layer components {
   .btn {
     @apply max-w-[200px] p-[10px] w-full flex items-center justify-center bg-primaryColor text-primaryColorInv rounded-standartRadius hover:bg-primaryColorHover;
+  }
+
+  .title {
+    @apply text-title text-primaryColor text-center font-extrabold;
+  }
+
+  .smallTitle {
+    @apply text-l text-primaryColor font-extrabold;
+  }
+
+  .dot {
+    @apply absolute top-[2px] left-[-40px] w-[18px] h-[18px] rounded-full border-2 border-primaryColor;
+  }
+
+  .dotLine {
+    @apply content-[""] absolute top-[19px] left-[-32px] w-[2px] bg-primaryColor
+  }
+
+  .htmlIcon {
+    @apply relative text-htmlColor
+  }
+
+  .htmlIcon::after {
+    @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-htmlColor
+  }
+
+  .cssIcon {
+    @apply relative text-cssColor
+  }
+
+  .cssIcon::after {
+    @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-cssColor
+  }
+
+  .jsIcon {
+    @apply relative text-jsColor
+  }
+
+  .jsIcon::after {
+    @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-jsColor
+  }
+
+  .gitIconLight {
+    @apply relative text-primaryColorInv
+  }
+
+  .gitIconLight::after {
+    @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-primaryColorInv
   }
 }
