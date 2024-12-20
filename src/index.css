@@ -3,15 +3,21 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
 
-.app {
-  @apply font-montserrat text-m text-primaryColorInv bg-primaryColorSuperDark;
-}
 
-.app.light {
-  @apply font-montserrat text-m text-primaryColorSuperDark bg-primaryColorInv;
-}
 
 @layer components {
+  section {
+    @apply mb-[75px]
+  }
+
+  .app {
+    @apply font-montserrat text-m text-primaryColorInv bg-primaryColorSuperDark;
+  }
+
+  .app.light {
+    @apply font-montserrat text-m text-primaryColorSuperDark bg-primaryColorInv;
+  }
+
   .container {
     @apply max-w-[1320px] mx-auto px-[10px];
   }
@@ -25,7 +31,11 @@
   }
 
   .title {
-    @apply text-title text-primaryColor text-center font-extrabold;
+    @apply text-title text-primaryColor text-center font-extrabold mb-[30px]
+  }
+
+  .img {
+    @apply w-full h-full object-cover
   }
 
   .smallTitle {
@@ -74,5 +84,31 @@
 
   .mainTitleDark {
     @apply text-primaryColorInv;
+  }
+
+  .whatWeDo__img {
+    @apply animate-whatWeDo
+  }
+
+  .bluredBall{
+    @apply absolute rounded-full blur-[100px]
+  }
+}
+
+@keyframes animWhatWeDo {
+  45% {
+    translate: 0 -90%;
+  }
+
+  50% {
+    translate: 0 -90%;
+  }
+
+  95% {
+    translate: 0 0;
+  }
+
+  100% {
+    translate: 0 0;
   }
 }

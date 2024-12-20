@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ProgrammItem } from "../../../../../public/appDataTypes";
+import { ProgrammItem } from "../../../../public/appDataTypes";
 
 interface CardProps {
   technology: ProgrammItem;

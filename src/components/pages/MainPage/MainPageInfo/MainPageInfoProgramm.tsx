@@ -1,4 +1,4 @@
-import { programmData } from "../../../../../public/appData";
+import { programmData } from "../../../../public/appData";
 import { ProgTechnologyCard } from "./ProgTechnologyCard";
 
 export const MainPageInfoProgramm = () => {

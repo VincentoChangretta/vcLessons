@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { pathnames } from "../../../public/appData";
+import { pathnames } from "../../public/appData";
 
 export const Logo = () => {
   return (

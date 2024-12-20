@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/global/header/Header";
-import { pathnames } from "../public/appData";
+import { pathnames } from "./public/appData";
 import { MainPage } from "./components/pages/MainPage/MainPage";
 import { useTheme } from "./components/theme/useTheme";
 

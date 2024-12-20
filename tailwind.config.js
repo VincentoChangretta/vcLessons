@@ -7,7 +7,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"]
       },
       fontSize: {
-        m: "18px",
+        m: "20px",
         l: "24px",
         title: "45px" 
       },
@@ -32,6 +32,7 @@ export default {
         minusHeader: "calc(100vh - 116px)"
       },
       animation: {
+        whatWeDo: "animWhatWeDo 30s ease infinite",
         bounceOne: "pulse 2.5s -.3s linear infinite", 
         bounceTwo: "pulse 2.5s -.6s linear infinite", 
         bounceThree: "pulse 2.5s -.9s linear infinite", 
