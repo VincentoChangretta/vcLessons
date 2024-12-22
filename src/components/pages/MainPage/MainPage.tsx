@@ -7,8 +7,8 @@ export const MainPage = () => {
   return (
     <>
       <MainPageTop />
-      <MainPageWhatWeDo />
       <MainPageExpert/>
+      <MainPageWhatWeDo />
       <MainPageInfo />
     </>
   );

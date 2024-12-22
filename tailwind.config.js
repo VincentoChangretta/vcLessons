@@ -17,6 +17,7 @@ export default {
         primaryColorDark: "#283D8F",
         primaryColorSuperDark: "#0A0F23",
         primaryColorInv: "#fff",
+        textBg: "#331D50",
         htmlColor: "#F2672E",
         cssColor: "#4264EB",
         jsColor: "#F2BF26",

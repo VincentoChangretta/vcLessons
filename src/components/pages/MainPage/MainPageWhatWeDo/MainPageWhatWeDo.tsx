@@ -24,14 +24,14 @@ export const MainPageWhatWeDo = () => {
           <ul className="flex flex-col gap-[20px] mb-[30px]">
             <div className="flex justify-between gap-[30px]">
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl">
+                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
                   Три одностраничных сайта:
                 </strong>{" "}
                 Вы создадите три простых сайта, что позволит вам освоить основы
                 HTML, CSS и JavaScript.
               </li>
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl">
+                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
                   Загрузка проекта на хостинг:
                 </strong>
                 Научимся загружать сайты на хостинг.
@@ -39,7 +39,7 @@ export const MainPageWhatWeDo = () => {
             </div>
             <div className="flex justify-between gap-[30px]">
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl">
+                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
                   Приложение "Прогноз погоды":
                 </strong>{" "}
                 Вы создадите интерактивное приложение, которое будет отображать
@@ -47,7 +47,7 @@ export const MainPageWhatWeDo = () => {
                 работать с внешними данными и динамически обновлять контент.
               </li>
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl">
+                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
                   Многостраничный сайт:
                 </strong>{" "}
                 Вы разработаете полноценный многостраничный сайт с функционалом
