@@ -1,9 +1,14 @@
-// import React from 'react';
 
-// export const Input = ({type, placeholder, name}) => {
-//   return (
-//     <label>
-//         <input name={name} type={type} placeholder={placeholder} />
-//     </label>
-//   );
-// }
+export interface InputProps {
+    name: string,
+    type: string,
+    placeholder: string
+}
+
+export const Input = (props: InputProps) => {
+  return (
+    <label>
+        <input name={props.name} type={props.type} placeholder={props.placeholder} />
+    </label>
+  );
+}
