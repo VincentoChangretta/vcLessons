@@ -8,6 +8,10 @@
     @apply mb-[75px];
   }
 
+  input, button{
+    @apply outline-8 outline-primaryColor
+  }
+
   .app {
     @apply font-montserrat text-m text-primaryColorInv bg-primaryColorSuperDark;
   }

@@ -9,9 +9,9 @@ export const MainPage = () => {
     <>
       <MainPageTop />
       <MainPageExpert/>
-      <MyForm/>
       <MainPageWhatWeDo />
       <MainPageInfo />
+      <MyForm/>
     </>
   );
 };

@@ -21,17 +21,17 @@ export const MainPageWhatWeDo = () => {
             <div className="bluredBall z-10 w-[300px] h-[300px] top-0 left-[-50px] bg-[rgba(255,255,255,.4)]"></div>
             <div className="bluredBall z-10 w-[300px] h-[300px] bottom-0 right-[-50px] bg-[rgba(255,255,255,.4)]"></div>
           </div>
-          <ul className="flex flex-col gap-[20px] mb-[30px]">
+          <ul className="flex flex-col gap-[30px] mb-[30px]">
             <div className="flex justify-between gap-[30px]">
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
+                <strong className="block text-primaryColor mb-[15px] text-2xl w-fit rounded-standartRadius">
                   Три одностраничных сайта:
                 </strong>{" "}
                 Вы создадите три простых сайта, что позволит вам освоить основы
                 HTML, CSS и JavaScript.
               </li>
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
+                <strong className="block text-primaryColor mb-[15px] text-2xl w-fit rounded-standartRadius">
                   Загрузка проекта на хостинг:
                 </strong>
                 Научимся загружать сайты на хостинг.
@@ -39,7 +39,7 @@ export const MainPageWhatWeDo = () => {
             </div>
             <div className="flex justify-between gap-[30px]">
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
+                <strong className="block text-primaryColor mb-[15px] text-2xl w-fit rounded-standartRadius">
                   Приложение "Прогноз погоды":
                 </strong>{" "}
                 Вы создадите интерактивное приложение, которое будет отображать
@@ -47,7 +47,7 @@ export const MainPageWhatWeDo = () => {
                 работать с внешними данными и динамически обновлять контент.
               </li>
               <li className="max-w-[45%] w-full">
-                <strong className="block text-primaryColor mb-2 text-2xl bg-primaryColorInv py-[5px] px-[20px] w-fit rounded-standartRadius bg-textBg">
+                <strong className="block text-primaryColor mb-[15px] text-2xl w-fit rounded-standartRadius">
                   Многостраничный сайт:
                 </strong>{" "}
                 Вы разработаете полноценный многостраничный сайт с функционалом
